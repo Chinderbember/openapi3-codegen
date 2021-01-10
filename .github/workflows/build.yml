@@ -27,7 +27,6 @@ jobs:
       - name: Run linters
         run: |
           pipenv run mypy ./src
-          pipenv run pytype ./src
 
       - name: Run tests
         run: |
