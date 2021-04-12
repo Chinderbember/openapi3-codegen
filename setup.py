@@ -35,4 +35,9 @@ setup(
         'Topic :: Software Development :: Libraries',
     ],
     install_requires=packages,
+    entry_points={
+        'console_scripts': [
+            'openapi3-codegen=codegen.__main__:run'
+        ]
+    }
 )

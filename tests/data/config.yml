@@ -1,0 +1,20 @@
+project:
+  name: ExampleService
+  swagger: tests/data/config.yml
+
+generation:
+  destination: generated
+  directories:
+    - first
+    - second
+    - third
+  templates:
+    - path/to/template1.pytpl
+    - path/to/template2.pytpl
+  copy:
+    direct:
+      - path/to/file/to/copy1.py
+      - path/to/file/to/copy2.py
+    formatted:
+      - path/to/file/to/copy-with-replacement1.py
+      - path/to/file/to/copy-with-replacement2.py
